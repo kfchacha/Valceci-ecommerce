@@ -1,0 +1,119 @@
+<script>
+      function plusSlides(n) {
+        // Get all the slideshow images
+        var slides = document.getElementsByClassName("mySlides");
+      
+        // Get the index of the currently visible slide
+        var currentIndex = -1;
+        for (var i = 0; i < slides.length; i++) {
+          if (slides[i].style.display === "block") {
+            currentIndex = i;
+            break;
+          }
+        }
+      
+        // If we couldn't find the current slide, exit the function
+        if (currentIndex === -1) {
+          return;
+        }
+      
+        // Calculate the index of the previous slide
+        var prevIndex = (currentIndex + slides.length - n) % slides.length;
+      
+        // Hide the current slide and show the previous slide
+        slides[currentIndex].style.display = "none";
+        slides[prevIndex].style.display = "block";
+      }
+    </script>
+
+
+
+
+<script>
+            var slideIndex = 1;
+        showSlides(slideIndex);
+
+        document.querySelector(".prev-button").addEventListener("click", function() {
+        plusSlides(-1);
+        });
+
+        document.querySelector(".next-button").addEventListener("click", function() {
+        plusSlides(1);
+        });
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+
+
+    <h3>    <button class="next-button">Next</button></h3>
+    
+
+
+
+
+
+
+    <div class="slideshow-container">
+           <img class="mySlides" src="images/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg">
+           <img class="mySlides" src="images/21849-6-dock-shoes-thumb.png">
+           <img class="mySlides" src="images/tamara-bellis-68csPWTnafo-unsplash.jpg">
+           <img class="mySlides" src="images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg">
+        </div>  
+
+
+
+
+        <script>
+    function plusSlides(n) {
+      // Get all the slideshow images
+      var slides = document.getElementsByClassName("mySlides");
+    
+      // Get the index of the currently visible slide
+      var currentIndex = -1;
+      for (var i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === "block") {
+          currentIndex = i;
+          break;
+        }
+      }
+    
+      // If we couldn't find the current slide, exit the function
+      if (currentIndex === -1) {
+        return;
+      }
+    
+      // Calculate the index of the previous slide
+      var prevIndex = (currentIndex + slides.length - n) % slides.length;
+    
+      // Hide the current slide and show the previous slide
+      slides[currentIndex].style.display = "none";
+      slides[prevIndex].style.display = "block";
+    }
+    </script>
+
+
+
+
+    <div class="mySlides" src="images/tamara-bellis-68csPWTnafo-unsplash.jpg">
+           <img class="mySlides" src="images/21849-6-dock-shoes-thumb.png">
+           <img class="mySlides" src="images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg">
+
+        </div>

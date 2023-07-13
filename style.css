@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/freestocks-_3Q3tsJ01nc-unsplash.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items: centre;
+
+}
+nav img{
+    width:100px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+
+}
+
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#AA5656;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width:90%;
+    color: #C04A82;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: centre;
+    
+
+}
+.textbox h1{
+ font-size:80px;
+ font-style: italic;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color:white;
+ margin:10px 10 40px;
+}
+.textbox p{
+    margin:10px 10 40px;
+    font-size: 14px;
+    color:#fff;
+    padding: 20%
+  
+}
+.arivals{
+    width:90%;
+    color: #C04A82;
+    position:absolute;
+    top:40%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    text-align: centre;
+    color:#C04A82;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:40%;
+    
+
+  }
+  
+  .mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+
+
+
+
+ .attempt{
+    width:40%;
+    height:40%;
+    position:absolute;
+    top:80%;
+    left:60%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 30%;
+    
+}
+
+.about{
+    width:80%;
+    min-height: 15vh;
+    margin: auto;
+    text-align: centre;
+   padding-left: 50%;
+   background-color:#FEFBE9;
+   
+}
+.about h1{
+    font-style: italic;
+    font-size: 50px;
+    color: #AA5656;
+    text-decoration: underline;
+    padding-right: 90%;
+}
+.about p{
+    color:#4CAF50
+}
+
+
+.next-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.next-button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+ 
+  /*-----------------end of home page----------------*/
+
+
+
+
+
+ /* css for login page*/ 
+
+.logheader{
+    margin:0;
+    padding:0;
+    background:url(images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg);
+    background-position: center;
+    font-family:sans-serif;
+    position:relative;
+    background-size: cover;
+    width:100%;
+    min-height: 100vh;
+}
+.loginbox{
+  width:320px;
+  height:420px;
+  background:#000;
+  color:#fff;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  box-sizing:border-box;
+  padding: 70px 30px;
+}
+.avatar{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position:absolute;
+  top:-15%;
+  left:35%
+}
+h1{
+  margin:0;
+  padding:0 0 20px;
+  text-align:center;
+  font-size: 22px;
+}
+.loginbox p{
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+.loginbox input{
+  width:100%;
+  margin-bottom:20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+  border:none;
+  border-bottom:1px solid #fff;
+  background: transparent;
+  outline: none;
+  height:40px;
+  color:#fff;
+  font-size:16px;
+}
+.loginbox input[type="submit"]{
+  border:none;
+  outline:none;
+  height:40px;
+  background:#68B984;
+  font-size:18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+  cursor:pointer;
+  background:#ffc107;
+  color:#000
+}
+.loginbox a {
+  text-decoration:none;
+  font-size:12px;
+  line-height:20px;
+  color:darkgrey;
+}
+.loginbox a:hover {
+   color:#ffc107;
+
+}
+
+/* ---------login form ends here -------*/
+
+/*---------signup page starts here------*/
+
+.registerheader{
+  background:url(images/becca-tapert-A_L2xNKgENg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  min-height: 100vh;
+}
+.main{
+  width:400px;
+  margin: auto 0;
+  
+  padding-left: 25%;
+}
+ 
+.loginboxer{
+  width:520px;
+  height:550px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  box-sizing:border-box;
+  padding: 70px 30px;
+  border-radius: 20px;
+  padding-top:10px;
+ 
+}
+.register{
+  color:white;
+  text-align:left;
+  font-size:18px;
+ 
+}
+.register h2{
+  padding:20px;
+}
+label{
+  font-family:sans-serif;
+  font-size:18px;
+  font-style:italic;
+}
+input#name{
+  width:250px;
+  border: 1px solid #ddd;
+  border-radius:3px;
+  outline:0;
+  padding:7px;
+  background-color:#fff;
+  box-shadow:inset 1px 1px 5px
+}
+.register  input[type="submit"]{
+  border:none;
+  outline:none;
+  height:40px;
+  background:#68B984;
+  font-size:18px;
+  border-radius: 20px;
+  width:100px;
+  text-align: center;
+}
+.register input[type="submit"]:hover{
+  cursor:pointer;
+  background:#ffc107;
+  color:#000
+}

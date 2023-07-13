@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valceci Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+       
+        
+      <nav>
+        <a href="index.html"><img src="images/21849-6-dock-shoes-thumb.png" ></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="login.html">SERVICES</a></li>
+                <li><a href="">CONTACTS</a></li>
+                
+            </ul>
+        </div>
+      </nav>
+    <div class="textbox">
+        <h1>Valceci Collections</h1>
+    </div>
+    
+    <div class="arivals">
+        <h1>New Arrivals:</h1>
+        
+    </div>
+    
+    <div class="attempt">
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/tamara-bellis-68csPWTnafo-unsplash.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="images/freestocks-_3Q3tsJ01nc-unsplash.jpg"style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="images/tamara-bellis-IwVRO3TLjLc-unsplash.jpg" style="width:100%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>   
+    </div>
+             
+   
+    <script>
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        
+        </script>
+   
+    </section>
+    <section class="about">
+        <h1>About</h1>
+        <br>
+        <p>Reach us on our contacts:<br>
+        Instagram @ Man utd<br>
+        Twitter @ Man utd<br>
+        Discord: our server<br>
+        snapchat: invinsible<br>
+        telephone: 070808080808<br>
+        drdttyuyuyuuoiu<br>
+        Email : Me@ gooogle.com<br>
+        Facebook @ Man Utd
+        </p>
+    </section>
+</body>
+</html>
